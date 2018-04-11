@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Flexcard extends Component {
   render(){
     return (
-        <div style={{flex: '1 0'}}>1.1</div>
+        <div style={{flex: this.props.growth}}>{this.props.content}</div>
     );
   }
 }
