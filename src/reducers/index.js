@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-//import PipelinesReducer from './reducer_pipelines'
+import PipelinesReducer from './reducer_pipelines'
 
 const rootReducer = combineReducers({
-//	pipelines: PipelinesReducer
+	pipelines: PipelinesReducer
 });
 
 export default rootReducer;
