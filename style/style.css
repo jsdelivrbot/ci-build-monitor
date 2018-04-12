@@ -12,15 +12,37 @@
     display: flex;
 }
 
+button {
+    display: block;
+    width: 100%;
+    font-size: small;
+}
+.flexbox-vertical {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-font{
+  font-size: small;
+}
+
+.flexi {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 1px;
+  font-size: calc(0.5vw + 0.5vh);
+  text-align: center;
+  line-height: 3.0;
+}
 
 .flexbox > div {
   background-color: DodgerBlue;
   color: white;
-  width: 200px;
   margin: 1px;
-  font-size: 30px;
+  font-size: calc(0.5vw + 0.5vh);
   text-align: center;
-  line-height: 100px;
+  line-height: 3.5;
 }
 
 .border{

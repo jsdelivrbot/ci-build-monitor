@@ -1,11 +1,11 @@
 import { renderComponent , expect } from '../test_helper';
-import About from '../../src/components/about';
+import Monitor from '../../src/components/monitor';
 
-describe('About' , () => {
+describe('Monitor' , () => {
   let component;
 
   beforeEach(() => {
-    component = renderComponent(About);
+    component = renderComponent(Monitor);
   });
 
   it('renders something', () => {
