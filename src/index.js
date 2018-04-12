@@ -6,12 +6,18 @@ import promise from 'redux-promise';
 import reducers from './reducers';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Monitor from './components/monitor';
+import ViewPage from './components/view_page';
+import BasicLayout from './components/basic_layout';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-	      <Monitor />
-
+    <BrowserRouter>
+      <Switch>
+        <Route path="/viewpage" component={ViewPage} />
+        <Route path="/" component={Monitor} />
+      </Switch>
+    </BrowserRouter>
   </Provider>
   , document.querySelector('.rootcon'));
