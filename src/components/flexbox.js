@@ -5,7 +5,7 @@ class Flexbox extends Component {
   renderFlexCards(){
     return _.map(this.props.content, card  => {
       return(
-        <Flexcard growth="1 0" cardContent={card}/>
+        <Flexcard growth="1 0" cardContent={card} key={card.name}/>
       )
       }
     );
