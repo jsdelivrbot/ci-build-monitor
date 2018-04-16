@@ -37,6 +37,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "react-grid-layout": "^0.16.6",
     "react-modal": "^3.1.13",
     "react-redux": "^5.0.7",
     "react-router": "^2.0.1",
