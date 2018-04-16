@@ -16,6 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/viewpage" component={ViewPage} />
+        <Route path="/buildmonitor/:id" component={Monitor} />
         <Route path="/" component={Monitor} />
       </Switch>
     </BrowserRouter>
