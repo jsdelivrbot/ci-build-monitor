@@ -12,8 +12,7 @@ import AddRemoveLayout from './add_remove_layout';
 class Monitor extends Component {
 
   componentWillMount() {
-    console.log("these are params passed ");
-    console.log(this.props);
+
     if (this.props.match.params.id){
       this.props.fetchPipelineViewByName(this.props.match.params.id);
     }
@@ -26,9 +25,6 @@ class Monitor extends Component {
   renderFlexBoxes(){
 
     var boxLists = [];
-    boxLists.push(
-      <ViewBox key="99999"/>
-    );
     let i = 0;
     var jobDetails = this.props.pipelines.pipelineview.jobDetails;
     console.log(jobDetails.length);
@@ -48,13 +44,18 @@ class Monitor extends Component {
   render(){
 
     if (this.props.pipelines.pipelineview){
-      return (
+      return(
         <div className="overlay">
           <div className="wrapper">
-            {this.renderFlexBoxes()}
+            <div className="top-right">
+              <ViewBox key="99999"/>
+            </div>
+            <div className="wrapper">
+              {this.renderFlexBoxes()}
+            </div>
           </div>
         </div>
-      );
+      )
     }
     else{
       return(
