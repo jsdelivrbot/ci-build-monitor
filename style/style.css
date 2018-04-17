@@ -77,6 +77,16 @@ button {
     z-index:1000;
 }
 
+.modaloverlay{
+    position:fixed;
+    width:80%;
+    height:80%;
+    top:100px;
+    left:100px;
+    right: 100px;
+    z-index:1000;
+}
+
 /* for loading page */
 .spinner {
   width: 40px;
@@ -118,4 +128,14 @@ button {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+
+.anchor {
+    color: white !important;
+    text-decoration: none;
+}
+.header {
+    color: white;
+    background-color: black;
+    text-align: center;
 }
