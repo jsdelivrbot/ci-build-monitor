@@ -5,26 +5,26 @@ class Flexcard extends Component {
   renderLabels(labelState){
     if (labelState == "SUCCESS") {
       return (
-        <button type="button" className="btn btn-info btn-sm">State: Success </button>
+        <button type="button" className="btn btn-info btn-sm">Success </button>
       );
     }
     else if (labelState == "FAILURE") {
       return (
-        <button type="button" className="btn btn-danger btn-sm">State: Failed</button>
+        <button type="button" className="btn btn-danger btn-sm">Failed</button>
       );
     }
     else if (labelState == "FAILED") {
       return (
-        <button type="button" className="btn btn-danger btn-sm">State: Failed</button>
+        <button type="button" className="btn btn-danger btn-sm">Failed</button>
       );
     }
     else if (labelState == "FINISHED") {
       return (
-        <button type="button" className="btn btn-info btn-sm">State: Finished</button>
+        <button type="button" className="btn btn-info btn-sm">Finished</button>
       );
     }
     return (
-      <button type="button" className="btn btn-default btn-sm">State: {labelState}</button>
+      <button type="button" className="btn btn-outline-info btn-sm">{labelState}</button>
     );
   }
 
@@ -71,7 +71,7 @@ class Flexcard extends Component {
       str += mills + "ms ";
     }
     return (
-      <span className="label label-default">ETA: {str}</span>
+      <button type="button" className="btn btn-secondary btn-sm">{str}</button>
     );
   }
 
@@ -102,7 +102,7 @@ class Flexcard extends Component {
             </DetailsModal>
           </div>
           <div style={{ flex: this.props.growth}}>
-            <span className="label label-default">disabled</span>
+            <button type="button" className="btn btn-secondary btn-sm">disabled</button>
           </div>
         </div>
       );
@@ -144,7 +144,7 @@ class Flexcard extends Component {
           </DetailsModal>
         </div>
         <div style={{ flex: this.props.growth}}>
-          <span className="label label-default">disabled</span>
+          <button type="button" className="btn btn-secondary btn-sm">disabled</button>
         </div>
       </div>
     );
