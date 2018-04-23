@@ -201,7 +201,7 @@ class DetailsModal extends Component {
           <div>
           <h2>
            {this.renderPipelineTable(this.props.modalContent)}
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          <button onClick={this.handleCloseModal}>Close</button>
           </h2>
           </div>
         </ReactModal>

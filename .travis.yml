@@ -9,7 +9,7 @@ services:
 before_install:
 - ls
 - docker build -t ci-bm .
-- docker run -d -p 8080:8080 --name app bm
+- docker run -d -p 8080:8080 --name app ci-bm
 - docker ps -a
 
 script:
