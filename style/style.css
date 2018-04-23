@@ -33,11 +33,6 @@ span.label {
     display: flex;
 }
 
-button {
-    display: block;
-    width: 100%;
-    font-size: small;
-}
 .flexbox-vertical {
     flex:2;
     display: flex;
@@ -70,8 +65,7 @@ button {
 }
 
 button{
-  font-size: 1.5rem !important;
-  line-height: 1.5 !important;
+  line-height: 0.5 !important;
   border-radius: 1rem !important;
 }
 .overlay{

@@ -86,10 +86,8 @@ class Flexcard extends Component {
           </div>
           <div style={{ flex: this.props.growth}}>
             {this.renderLabels(this.props.cardContent.latestRun.result)}
-            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
-          </div>
-          <div style={{ flex: this.props.growth}}>
             {this.renderRunLabel(this.props.cardContent.latestRun.runSummary)}
+            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
           </div>
         </div>
       );
@@ -116,8 +114,8 @@ class Flexcard extends Component {
           </div>
           <div style={{ flex: this.props.growth}}>
             {this.renderLabels(this.props.cardContent.latestRun.result)}
-            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
             {this.renderRunLabel(this.props.cardContent.latestRun.runSummary)}
+            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
           </div>
         </div>
       );
@@ -131,8 +129,8 @@ class Flexcard extends Component {
           </div>
           <div style={{ flex: this.props.growth}}>
             {this.renderLabels(this.props.cardContent.latestRun.result)}
-            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
             {this.renderRunLabel(this.props.cardContent.latestRun.runSummary)}
+            {this.renderTime(this.props.cardContent.latestRun.durationInMillis)}
           </div>
         </div>
       );
